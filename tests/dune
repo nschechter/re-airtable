@@ -1,0 +1,23 @@
+;; dune file
+(library
+  (name ReAirtableTest)
+  (public_name re-airtable.tests)
+  ; IMPORTANT: -linkall flag is required to include all tests.
+  (ocamlopt_flags -linkall -g)
+  (libraries
+    lwt
+    ReAirtable
+    rely.lib
+  )
+  (modules (:standard \ RunTests))
+)
+
+(executable
+  (package tests)
+  (name RunTests)
+  (public_name RunTests)
+  (libraries
+    ReAirtableTest
+  )
+  (modules RunTests)
+)

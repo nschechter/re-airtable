@@ -1,0 +1,6 @@
+(library
+   (public_name re-airtable)
+   (name ReAirtable)
+   (libraries lwt cohttp cohttp-lwt-unix rely.lib)
+)
+(include_subdirs unqualified)

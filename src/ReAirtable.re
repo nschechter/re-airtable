@@ -68,4 +68,5 @@ module Internals = {
   module DeleteRecords = DeleteRecords;
   module RetrieveRecord = RetrieveRecord;
   module ListRecords = ListRecords;
+  module Response = Response;
 };
